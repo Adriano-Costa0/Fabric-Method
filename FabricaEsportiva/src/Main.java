@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import interfaces.Camisa;
-import interfaces.Factory;
+import interfaces.FactoryMethod;
 
 public class Main {
 
@@ -37,35 +37,35 @@ public class Main {
 
       switch (code) {
         case "1":
-          Factory nike = new FactoryCamisaNikeBrasil();
+          FactoryMethod nike = new FactoryCamisaNikeBrasil();
           Camisa camisaBrasil = nike.createTeamCamisa();
 
           camisaBrasil.showTeamInfo();
           camisaBrasil.showFabricInfo();
           break;
         case "2":
-          Factory adidas = new FactoryCamisaAdidasFlamengo();
+          FactoryMethod adidas = new FactoryCamisaAdidasFlamengo();
           Camisa camisaFlamengo = adidas.createTeamCamisa();
 
           camisaFlamengo.showTeamInfo();
           camisaFlamengo.showFabricInfo();
           break;
         case "3":
-          Factory puma = new FactoryCamisaPumaBotafogo();
+          FactoryMethod puma = new FactoryCamisaPumaBotafogo();
           Camisa camisaBotafogo = puma.createTeamCamisa();
 
           camisaBotafogo.showTeamInfo();
           camisaBotafogo.showFabricInfo();
           break;
         case "4":
-          Factory umbro = new FactoryCamisaUmbroFluminense();
+          FactoryMethod umbro = new FactoryCamisaUmbroFluminense();
           Camisa camisaFluminense = umbro.createTeamCamisa();
 
           camisaFluminense.showTeamInfo();
           camisaFluminense.showFabricInfo();
           break;
         case "5":
-          Factory kappa = new FactoryCamisaKappaVasco();
+          FactoryMethod kappa = new FactoryCamisaKappaVasco();
           Camisa camisaVasco = kappa.createTeamCamisa();
 
           camisaVasco.showTeamInfo();

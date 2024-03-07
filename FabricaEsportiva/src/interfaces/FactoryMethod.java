@@ -1,5 +1,5 @@
 package interfaces;
 
-public interface Factory {
+public interface FactoryMethod {
   public Camisa createTeamCamisa();
 }

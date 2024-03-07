@@ -1,8 +1,8 @@
 import classes.CamisaKappaVasco;
 import interfaces.Camisa;
-import interfaces.Factory;
+import interfaces.FactoryMethod;
 
-public class FactoryCamisaKappaVasco implements Factory {
+public class FactoryCamisaKappaVasco implements FactoryMethod {
 
   @Override
   public Camisa createTeamCamisa() {
